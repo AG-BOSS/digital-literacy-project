@@ -1,4 +1,4 @@
-Digital literacy project3
+Digital literacy project
 
 TASK 1:
 
