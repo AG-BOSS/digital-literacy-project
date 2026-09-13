@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect width="64" height="64" rx="16" fill="#071A36"/>
-  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#C99A3E" stroke-width="2" stroke-opacity="0.6"/>
-  <text x="32" y="42" font-family="'Cinzel', Georgia, serif" font-size="26" font-weight="800" fill="#C99A3E" text-anchor="middle" letter-spacing="1">SS</text>
-  <circle cx="32" cy="14" r="2.5" fill="#E5BA55"/>
-</svg>
