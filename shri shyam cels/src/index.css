@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  h1, h2, h3, .font-serif-display {
+    font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #040E1E;
+}
+::-webkit-scrollbar-thumb {
+  background: #C99A3E;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5BA55;
+}
+
+/* Metallic Gold Text Gradient */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0C2 0%, #E5BA55 35%, #C99A3E 70%, #9B7020 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(201, 154, 62, 0.25);
+  border-color: rgba(201, 154, 62, 0.4);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(201, 154, 62, 0.45);
+}
+
+.pink-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(194, 24, 91, 0.45);
+}
+
+.green-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(39, 122, 69, 0.45);
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(11, 37, 69, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 154, 62, 0.2);
+}
+
+.glass-card-light {
+  background: rgba(248, 243, 232, 0.95);
+  backdrop-filter: blur(12px);
+  color: #071A36;
+}
+
+/* Floating animation */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@keyframes floatReverse {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(10px) rotate(-2deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Accessible focus rings */
+:focus-visible {
+  outline: 2px solid #C99A3E;
+  outline-offset: 2px;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
